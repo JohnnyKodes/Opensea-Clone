@@ -66,6 +66,12 @@ const Nft = () => {
 
   return (
     <div>
+      <Head>
+        <title>Opensea Clone | {selectedNft?.name}</title>
+        <meta name="description" content="Web3 Opensea Clone" />
+        <link rel="icon" href="/opensea.ico" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+      </Head>
       <Header />
       <div className={style.wrapper}>
         <div className={style.container}>

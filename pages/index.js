@@ -46,6 +46,12 @@ export default function Home() {
 
   return (
     <div className={style.wrapper}>
+      <Head>
+        <title>Opensea Clone</title>
+        <meta name="description" content="Web3 Opensea Clone" />
+        <link rel="icon" href="/opensea.ico" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+      </Head>
       <Toaster position="top-center" reverseOrder={false} />
       {address ? (
         <>

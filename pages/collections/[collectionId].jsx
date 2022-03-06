@@ -1,5 +1,6 @@
 import { useRouter } from 'next/router'
 import Link from 'next/link'
+import Head from 'next/head'
 import React, { useEffect, useMemo, useState } from 'react'
 import { useWeb3 } from '@3rdweb/hooks'
 import { ThirdwebSDK } from '@3rdweb/sdk'
@@ -102,6 +103,12 @@ const Collection = () => {
 
   return (
     <div className="overflow-hidden">
+      <Head>
+        <title>Opensea Clone | {collection?.title}</title>
+        <meta name="description" content="Web3 Opensea Clone" />
+        <link rel="icon" href="/opensea.ico" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+      </Head>
       <Header />
       <div className={style.bannerImageContainer}>
         <img
